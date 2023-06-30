@@ -1,0 +1,30 @@
+.container{
+    padding:0px auto;
+    width:90vw;
+    height:30vw ;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    padding:5px;
+
+}
+.nhanhieu{
+    color: #333;
+}
+.box-1{
+    display:flex;
+    justify-content:center;
+    align-content:flex-end;
+    flex-flow:row-reverse wrap-reverse;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+
+}
+
+

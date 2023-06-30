@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background: #333;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    border-right: 2px solid rgb(255, 255,250);
+}
+
+
+.wrapper a:hover{
+    color: red;
+}
+
+.image{
+    width: 100px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    margin: 0px 20px 0px 20px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+}
+
+
+.imagea{
+    flex-grow: 3;
+    height: 450px;
+    display: block;
+    position: relative;
+    outline: none;
+    border: none;
+    margin-top: 35px;
+}
+
+
+.imagea img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.quantrong{
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 25%;
+}
+
+.noidung{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(60px,auto);
+    grid-template-areas: 
+    "aa bb bb"
+    "cc bb bb"
+    "dd ee gg"
+    ;
+}
+.item-1{
+    grid-area: aa;
+    margin: 10px;
+}
+
+.item-2{
+    grid-area: bb;
+    margin: 10px;
+}
+
+.item-3{
+    grid-area: cc;
+    margin: 10px;
+}
+
+.item-4{
+    grid-area: dd;
+    margin: 10px;
+}
+
+.item-5{
+    grid-area: ee;
+    margin: 10px;
+}
+
+.item-6{
+    grid-area: gg;
+    margin: 10px;
+}
+
+.nd{
+    margin-top: 20px;
+    padding: 20px;
+    height: auto;
+    border: 2px solid #483D8B;
+}
+
+.aw-1{
+    background: #483D8B;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aw-1 a{
+    color: #FF7F50;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.aw-1 a:hover{
+    color: white;
+}
+
+.av{
+    display: flex;
+    flex-direction: column;
+}
+.av1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.av1-img{
+    flex: 1;
+}
+
+.av1 img{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+}
+
+
+.av-1 .av1-1{
+    flex: 2;
+}
+
+.av1-1 {
+    margin: 10px 5px;
+}
+
+.av1-1 h3{
+    color: #FF7F50;
+}
+.au {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.au-1{
+   background: #483D8B;
+   text-decoration: none;
+   color: wheat;
+   margin: 10px;
+}
+
+.au-1 a{
+    color: wheat;text-decoration: none;
+    display: flex;
+}
+
+.noidung img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

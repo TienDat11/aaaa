@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu cấp 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        .menu-level-1{
+            background-color: #2C3442;
+            text-align: start;
+
+        }
+        .menu-level-1 a{
+            color: #fff;
+        }
+
+        .menu-level-1 .item-menu-level-1{
+            display: inline-block;
+        }
+        .menu-level-1 .item-menu-level-1:hover{
+            background-color: #f44336;
+
+        }
+        .menu-level-1 .item-menu-level-1:hover .menu-level-2{
+            display: block;
+        }
+        .menu-level-1 .item-menu-level-1 .title-menu-level-1{
+            padding:10px 20px ;
+            display: inline-block;
+        }
+
+        .menu-level-2{
+            position: absolute;
+            background-color: white;
+            padding:10px 20px;
+            border: 1px solid #ddd;
+            display: none;
+
+        }
+        .menu-level-2 a{
+            color:#444;
+        }
+
+        .menu-level-2 .item-menu-level-2{
+            padding: 10px 0px;
+
+        }
+        .menu-level-2 .item-menu-level-2:hover{
+            text-decoration: underline;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu-level-1">
+       <li class="item-menu-level-1">
+        <a href="" class="title-menu-level-1">Kinh tế</a>
+        <ul class="menu-level-2">
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Kinh tế</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Kinh tế vi mô</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Kinh tế vĩ mô</a>
+            </li>
+        </ul>
+       </li>
+       <li class="item-menu-level-1">
+        <a href="" class="title-menu-level-1">Lịch sử</a>
+        <ul class="menu-level-2">
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Lịch sử</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Lịch sử niên đại</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Lịch sử hiện đại</a>
+            </li>
+        </ul>
+       </li>
+       <li class="item-menu-level-1">
+        <a href="" class="title-menu-level-1">Thể Thao</a>
+        <ul class="menu-level-2">
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Thể Thao</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Thể Thao trong nước</a>
+            </li>
+            <li class="item-menu-level-2">
+                <a href="" class="title-item-menu-level-2">Giải đấu châu âu</a>
+            </li>
+        </ul>
+       </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(to left,#cc00cc,rgb(51, 102, 255));
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 400px;
+    height: auto;
+    margin: 100px auto;
+    background: white;
+    border-radius: 6px ;
+    padding-top:10px ;
+    overflow: hidden;
+}
+
+
+form{
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px ;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input{
+    font-size: 24px;
+    width: 100%;
+    margin-right: 15px;
+    outline: none;
+    border: none;
+}
+
+
+form button{
+    background: #cc00cc;
+    padding: 5px 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.todos{
+    list-style: none;
+
+}
+
+.todos li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.todos li span{
+    white-space: nowrap;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+li.completed{
+    color: #aaa;
+    
+}
+
+li.completed span{
+    text-decoration: line-through;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background-image: url(https://img.thuthuatphanmem.vn/uploads/2018/10/08/anh-anime-phong-canh-dep_093817122.jpg);
+            background-repeat: no-repeat;
+        }
+        .box1{
+            width: 800px; !important;
+        }
+        .box2{
+            background-position: 0px 0px;
+        }
+        .box3{
+            background-position: -200px 0px;
+        }
+        .box4{
+            background-position: -400px 0px;
+        }
+        .box5{
+            background-position: -600px 0px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            padding-top: 10px;
+        }
+        .b1{
+            width:800px;
+            height:100px;
+            display: flex;
+            column-gap: 10px;
+        }
+        .b1 {
+            width:100%;
+        }
+        
+    </style>
+</head>
+<body>
+    Ảnh gốc
+    <div class="box box1"></div>
+<div class="container">
+<div class="b1">
+    <div class="box box2" style="width=200px"></div>
+    <div class="box box3"></div>
+</div>
+<div class="b2">
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</div>
+</div>
+</body>
+</html>

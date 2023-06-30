@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function TongBp(n){
+            S=0;
+            for(i=1;i<n;i++)
+                S+=i*i;
+                return S;
+        }
+        function Tongle(n){
+            S=0;
+            for(i=1;i<n;i++)
+                if(i%2==1)
+                    S+=i;
+                return S;
+        }
+        n = prompt("Nhập giá trị n = ");
+        document.writeln("Gia tri cua n la :"+n+" <br/> ");
+        document.writeln("Gia tri cua tong binh phuong la:"+TongBp(n)+" <br/> ");
+        document.writeln("Tong so le:"+Tongle(n)+" " );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

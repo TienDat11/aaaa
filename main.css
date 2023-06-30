@@ -1,0 +1,49 @@
+#container{
+    margin: 0px auto;
+    weight:800px;
+    display:grid ;
+    grid-template-columns: repeat(4,1fr 2fr);
+    grid-auto-rows: 100px 200px 100px;
+    grid-template-areas: 
+    "aa aa"
+    "bb bb"
+    "cc dd"
+    "cc ee"
+    "gg  hh"
+    "ii ii"
+}
+#a{
+    background-color: red;
+    grid-area: aa;
+    
+}
+#b{
+    background-color: black;
+    grid-area: bb;
+    
+}
+#c{
+    background-color: blue;
+    grid-area: cc;
+}
+#d{
+    background-color: blueviolet;
+    grid-area: dd;
+}
+#e{
+    background-color: #111;
+    grid-area: ee;
+}
+#f{
+    background-color: skyblue;
+    grid-area: gg;
+    weight:20px;
+}
+#g{
+    background-color: chartreuse;
+    grid-area: hh;
+}
+#h{
+    background-color: aquamarine;
+    grid-area: ii;
+}

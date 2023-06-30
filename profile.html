@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+:root{
+    --primary-color:#f2726a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right,#8198cc,#333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #242628;
+    width: 300px;
+    height: 480px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Poppins";
+    overflow: hidden ;
+  
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.card_img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: 1s;
+}
+
+.card p {
+    color: var(--primary-color);
+}
+.link{
+    margin: 25px;
+}
+
+.link a{
+    color: white;
+    margin: 25px 20px;
+    font-size: 20px;
+}
+.link a:hover{
+    color: #f2726a;
+}
+.card button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card button:hover{
+    background-color: #f2726a;
+}
+
+.card h2{
+    color: white;
+    margin: 35px;
+}
+
+.card_img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: none;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card_img"><img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/149764889_2967949570108816_5398712863416693166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=aUme5pFhZYUAX9n2inM&_nc_ht=scontent.fdad3-4.fna&oh=00_AfByLSzdHUcNlRjAqb1dSFW1SRk4E7a9ukvCf_JIXxTOew&oe=64C4F66C" alt=""></div>
+        <h2>Lê Quang Sang</h2>
+        <p>Dễ gàn khó xa</p>
+        <div class="link">
+            <a href="https://www.facebook.com/profile.php?id=100011071200596https://www.facebook.com/profile.php?id=100011071200596"><i class="fa-brands fa-facebook-messenger fa-beat"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100011071200596https://www.facebook.com/profile.php?id=100011071200596"><i class="fa-brands fa-facebook-f fa-fade"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-spin"></i></a>
+            <a href="https://www.instagram.com/thvan.27_/"><i class="fa-brands fa-instagram fa-spin"></i></a>
+        </div>
+        <button>Contact Me</button>
+    </div>
+</body>
+</html>

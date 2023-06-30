@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script type="text/JavaScript">
+        function chuhoa(s) {
+            return s.toupperCase();
+        }
+        function chuthuong(s) {
+            return s.tolowerCase();
+        }
+        function chuanhoa(s) {
+            s = s.tolowerCase();
+            xau="";
+            for(i=0 ;i < s.length() ; i++)
+                if(i==0) xau+=s.substr(i,1).toupperCase(); 
+                else if(s.substr(i-1,1)=" " && i<s.length())   xau+=s.substr(i,1).toupperCase();
+                else xau+=s.substr.tolowerCase();
+            return xau;
+        }
+        s = prompt("Nhap vao 1 xau lan lon: ");
+        document.writeln("Xau hoa la:"+chuhoa(s)+" <br/> ");
+        document.writeln("Xau thuong la:"+chuthuong(s)+" <br/> " );
+        document.writeln("Xau sau khi chuan hoa la:"+chuanhoa(s)+"  " );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

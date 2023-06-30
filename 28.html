@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="color" id="colordig"  style="visibility: hidden;" >
+        <style>
+            #box1 ,#box2,#box3 {
+                width: 200px;
+                height:200px;
+                margin:10px;
+                background-color : blue;
+            }
+            
+        </style>
+        <script type="text/javascript"> 
+        var activeObj = null;
+        function changeColor(id, value){
+            var obj = document.getElementById(id);
+            obj.style.backgroundColor=value;
+        }
+        document.getELementById('box1').onclick = 
+        document.getELementById('box2').onclick = 
+        document.getELementById('box3').onclick = 
+        function() {
+            document.getElementById('colordig').click();
+            activeObj =  this.id;
+        }
+        document.getELementById('colordig').onchange = function(){
+            changecolor (activeObj, colordig.value);
+        }
+        </script>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

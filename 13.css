@@ -1,0 +1,33 @@
+*{
+box-sizing: border-box;
+padding:0px;
+margin:0px;
+}
+.container{
+    width:100vw;
+    height:600px;
+    border:5px solid gray;
+    margin:0px auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+}
+.box{
+    width:300px;
+    height:200px;
+    padding:10px;
+}
+.box-1{
+    background-color: red;
+}
+.box-2{
+    background-color: blue;
+}
+.box-3{
+    background-color:gray ;
+
+}
+.box-4{
+    background-color: aqua;
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root{
+    --success:rgb(0,128,0) ;
+    --warning:rgb(128, 0, 0) ;
+    --error:rgb(128, 47, 0)  ;
+
+    --success--light:rgba(0,128,0,0.4);
+    --warning--light:rgba(128, 0, 0, 0.4);
+    --error--light:rgba(128, 47, 0, 0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,#bb69cc ,#246bac);;
+}
+
+.success{
+    background: var(--success);
+}
+
+.warning{
+    background: var(--warning);
+}
+
+.error{
+    background: var(--error);
+}
+
+
+.control button{
+    outline: none;
+    border: none;
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 20px ;
+    border-radius: 4px;
+    color: white;
+}
+
+#toasts{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+.toast{
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    overflow: hidden;
+    animation: slideShow 4s ease forwards;
+    margin-bottom: 10px;
+}
+
+.toast i{
+    margin: 0 10px;
+}
+
+.toast .countdown{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: countdown 4s ease forwards;
+}
+
+.toast.success{
+    border-left:6px solid var(--success);
+    background: var(--success--light);
+}
+
+
+.toast.success .countdown{
+    background: var(--success);
+}
+.toast.warning .countdown{
+    background: var(--warning);
+}
+.toast.error .countdown{
+    background: var(--error);
+}
+
+
+
+@keyframes countdown{
+    0%{
+        width: 100%;
+    }
+
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes  slideShow{
+    0%{
+        transform: translate(-10%);
+    }
+    25%{
+        transform: translate(0%);
+    }
+
+    50%{
+        transform: translate(-10%);
+    }
+
+    100%{
+        transform: translate(-10px);
+    }
+
+}
+
+
+
+@keyframes  slidehide{
+    0%{
+        transform: translate(100%);
+    }
+    25%{
+        transform: translate(-10%);
+    }
+
+    50%{
+        transform: translate(0%);
+    }
+
+    100%{
+        transform: translate(200%);
+    }
+
+}
+
+.toast.error{
+    background: var(--error--light);
+    border-left:6px solid var(--error) ;
+}
+
+.toast.warning{
+    border-left:6px solid var(--warning) ;
+    background: var(--warning--light);
+}
